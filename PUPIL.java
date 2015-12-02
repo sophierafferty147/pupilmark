@@ -18,8 +18,8 @@ public class PUPIL
         // unpack string of row data into fields
         String[] rowItems = dataItems.split(",");
         // store each data items as instance property 
-        fName = rowItems[0];
-        sName = rowItems[1];
+        fName = rowItems [0];
+        sName = rowItems [1];
         pupilmark = Integer.parseInt(rowItems[2]);
     }
     public String writeDetails()
