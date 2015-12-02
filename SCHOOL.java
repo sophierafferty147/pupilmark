@@ -1,5 +1,4 @@
 
-
 import javax.swing.JOptionPane;
 import java.io.*;
 public class SCHOOL
@@ -40,9 +39,18 @@ public class SCHOOL
             pupilList[i].readPupilDetails(dataRows[i+1]);
         }
     }
-    
-    public void countpupilmark()
+
+    public void countpupilmark() throws IOException 
     {
-        //placeholder
+        for (int i = 0; i < noOfPupils; i++)
+        {
+            if ((pupilList[i].getpupilmark() < pupilList [maxDataPosition].getData ))
+        {
+            MaxDataPosition = 1;
+        }
+      }
+      System.out.print("Top Mark is:" + maxDataPosition + " , Value is:");
+      dataList[maxDataPosition].displayData();
+      System.out.println();
+     }
     }
-}
