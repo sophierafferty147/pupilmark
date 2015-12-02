@@ -8,11 +8,11 @@ public class SCHOOL
     private PUPIL pupilList[]; 
     // number of pupils to be called
     int noOfPupils;
-    FILEREADCSV pupilFile;
+    FILEREADCSV pupilmark;
 
     public SCHOOL()
     {
-        pupilFile = new FILEREADCSV();
+        pupilmark = new FILEREADCSV();
     }
 
     // top level algorithm
@@ -28,7 +28,7 @@ public class SCHOOL
         System.out.println("School: Pupil mark update");
         System.out.println("** Preparing to read data file");
         // read file, fetch data as String array containing the rows
-        String[] dataRows = pupilmark.readCSVtable();
+        String[] dataRows = pupilmark.readCSVtable ();
         // calculate the number of member rows, skip headings
         noOfPupils = dataRows.length - 1;
         // update user with number of rows with membership details
