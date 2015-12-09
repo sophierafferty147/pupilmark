@@ -58,7 +58,7 @@ public class SCHOOL
       {
           fileContent = fileContent.concat("\n");
         }
-      fileContent = fileContent.concat(pupilList[1].writeDetails());
+      fileContent = fileContent.concat(pupilList[maxDataPosition].writeDetails());
       
       System.out.print("Top Mark is:" + maxDataPosition);
       pupilList[maxDataPosition].displaydetails();
